@@ -1,10 +1,10 @@
 <HTML>
     <head>
         <meta charset="utf-8">
-        <?php include_once('connectBdd.php');
-        include('select_joueur.php'); 
-            
-            include('select_aventurier.php'); 
+        <?php 
+        include_once('connectBdd.php');
+        require('select_joueur.php'); 
+        require('select_aventurier.php'); 
         ?>
 
     </head>
@@ -24,7 +24,7 @@
 			</select>
 		</div>
         <div>
-        <libelle>Aventurier : </libelle>
+            <libelle>Aventurier : </libelle>
             <select name="listAventurier" id="listAventurier">
 				<?php  
 					foreach ($aventuriers as $aventurier) {
